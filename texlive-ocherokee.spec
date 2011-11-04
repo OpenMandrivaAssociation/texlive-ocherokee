@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /language/cherokee/ocherokee
+# catalog-date 2007-03-12 00:37:02 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-ocherokee
 Version:	20070312
 Release:	1
@@ -61,6 +67,7 @@ with the Omega version of LaTeX (known as Lambda).
 %doc %{_texmfdistdir}/doc/omega/ocherokee/cherokee.pdf
 %doc %{_texmfdistdir}/doc/omega/ocherokee/chief.tex
 %doc %{_texmfdistdir}/doc/omega/ocherokee/proverb.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,3 +78,5 @@ with the Omega version of LaTeX (known as Lambda).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts omega doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
