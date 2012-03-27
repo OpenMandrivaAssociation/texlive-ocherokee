@@ -1,4 +1,4 @@
-# revision 15878
+# revision 25689
 # category Package
 # catalog-ctan /language/cherokee/ocherokee
 # catalog-date 2007-03-12 00:37:02 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ocherokee
 Version:	20070312
-Release:	2
+Release:	3
 Summary:	LaTeX Support for the Cherokee language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/cherokee/ocherokee
@@ -55,6 +55,10 @@ with the Omega version of LaTeX (known as Lambda).
 %{_texmfdistdir}/fonts/type1/public/ocherokee/Cherokee.pfb
 %{_texmfdistdir}/omega/ocp/ocherokee/cher2uni.ocp
 %{_texmfdistdir}/omega/otp/ocherokee/cher2uni.otp
+%{_texmfdistdir}/tex/lambda/ocherokee/lchcmr.fd
+%{_texmfdistdir}/tex/lambda/ocherokee/lchenc.def
+%{_texmfdistdir}/tex/lambda/ocherokee/ocherokee.sty
+%doc %{_texmfdistdir}/doc/omega/ocherokee/READ.ME
 %doc %{_texmfdistdir}/doc/omega/ocherokee/cherokee.pdf
 %doc %{_texmfdistdir}/doc/omega/ocherokee/chief.tex
 %doc %{_texmfdistdir}/doc/omega/ocherokee/proverb.tex
@@ -67,4 +71,4 @@ with the Omega version of LaTeX (known as Lambda).
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar fonts omega doc %{buildroot}%{_texmfdistdir}
+cp -fpar fonts omega tex doc %{buildroot}%{_texmfdistdir}
