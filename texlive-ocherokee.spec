@@ -72,3 +72,21 @@ with the Omega version of LaTeX (known as Lambda).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts omega tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070312-3
++ Revision: 787696
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070312-2
++ Revision: 754499
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070312-1
++ Revision: 719149
+- texlive-ocherokee
+- texlive-ocherokee
+- texlive-ocherokee
+- texlive-ocherokee
+
