@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-ocherokee
-Version:	20070312
-Release:	11
+Version:	20170414
+Release:	1
 Summary:	LaTeX Support for the Cherokee language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/cherokee/ocherokee
