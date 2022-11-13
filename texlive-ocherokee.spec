@@ -1,18 +1,12 @@
-# revision 25689
-# category Package
-# catalog-ctan /language/cherokee/ocherokee
-# catalog-date 2007-03-12 00:37:02 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-ocherokee
-Version:	20190228
+Version:	25689
 Release:	1
 Summary:	LaTeX Support for the Cherokee language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/cherokee/ocherokee
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocherokee.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocherokee.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocherokee.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocherokee.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ Macros and Type 1 fonts for Typesetting the Cherokee language
 with the Omega version of LaTeX (known as Lambda).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -65,28 +59,10 @@ with the Omega version of LaTeX (known as Lambda).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts omega tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070312-3
-+ Revision: 787696
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070312-2
-+ Revision: 754499
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070312-1
-+ Revision: 719149
-- texlive-ocherokee
-- texlive-ocherokee
-- texlive-ocherokee
-- texlive-ocherokee
-
