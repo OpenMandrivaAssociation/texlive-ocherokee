@@ -1,6 +1,6 @@
 Name:		texlive-ocherokee
 Version:	25689
-Release:	1
+Release:	2
 Summary:	LaTeX Support for the Cherokee language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/cherokee/ocherokee
