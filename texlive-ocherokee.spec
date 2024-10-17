@@ -3,7 +3,7 @@ Version:	25689
 Release:	2
 Summary:	LaTeX Support for the Cherokee language
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/cherokee/ocherokee
+URL:		https://www.ctan.org/tex-archive/language/cherokee/ocherokee
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocherokee.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocherokee.doc.r%{version}.tar.xz
